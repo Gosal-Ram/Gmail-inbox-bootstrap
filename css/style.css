@@ -1,0 +1,19 @@
+*{
+	margin: 0px;
+    	padding: 0px;
+    	box-sizing: border-box;
+}
+
+
+body {
+	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+	background-color: #f6f8fc;
+}
+
+.search-input{
+	border:none;	
+}
+.green-dot {
+	color: #1E8E3E;
+	font-size: 20px;
+}
