@@ -1,0 +1,36 @@
+*{
+	margin: 0px;
+    	padding: 0px;
+    	box-sizing: border-box;
+}
+
+
+body {
+	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+	background-color: #f6f8fc;
+}
+
+.search-input{
+	border:none;	
+}
+.green-dot {
+	color: #1E8E3E;
+	font-size: 20px;
+}
+.inbox-icon-container, .starred-container, .sent-container, .snoozed-container, .drafts-container, .label-container, .more-container{
+	width:230px;
+}
+.compose-container{
+	width:140px;
+}
+
+.compose-container-items{
+	background-color:#C2E7FF;
+}
+
+.inbox-icon-container-items,.envelope{
+	background-color:#D3E3FD;
+}
+.inbox-container-header{
+	width:85%;
+}
