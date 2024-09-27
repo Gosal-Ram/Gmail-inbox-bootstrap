@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Gmail-clone-bs</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="assets/images/logo-16.png">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="css/style.css"/><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   </head>
+   <body>
+    <div class="container-fluid d-none d-md-flex w-100">
+	<div class="side-navbar d-none d-md-block mt-2 ps-2 pe-4">
+	   <nav class="navbar">
+	      <ul class="navbar-nav">
+	         <li class="nav-item">
+		 	<a class="nav-link d-flex flex-column align-items-center" href="">
+			   <img src="assets/images/icons8-menu-24.png" alt="menu" width="20">
+			</a>
+		 </li>
+		 <li class="nav-item mt-4">
+			<a class="nav-link d-flex flex-column align-items-center" href="#">
+			   <div class="d-flex align-items-center envelope px-2 py-1 rounded">
+				<img src="assets/images/icons8-envelope-24.png" alt="mail" width="20">
+			   </div>
+		           <span>Mail</span>
+			</a>
+		 </li>
+		 <li class="nav-item">
+			<a class="nav-link d-flex flex-column align-items-center" href="#">
+			   <div>
+			      <img src="assets/images/chat-box.png" alt="chat" width="20">
+			   </div>
+			   <span>Chat</span>
+			</a>
+		 </li>
+		 <li class="nav-item">
+		    <a class="nav-link d-flex flex-column align-items-center" href="#">
+		    	<div>
+		       	   <img src="assets/images/meet-icon.png" alt="meet" width="20">
+		        </div>
+		        <span>Meet</span>
+		    </a>
+		 </li>
+	     </ul>
+	  </nav>
+	</div>
+	<div class="main-content w-100 mt-2">
+	    <header class="header">
+	       <ul class="row navbar-nav flex-row align-items-center vw-100">
+	   	 <li class="col-2 nav-item">
+	            <a href="#" class="nav-item"><img src="assets/images/logo_gmail.png" alt="gmail_logo" width="109" height="40"></a>
+		 </li>
+	   	 <li class="col-6 nav-item header-search d-flex">
+                       <a class="nav-link me-3" href=""><i class="bi bi-search"></i></a>
+                       <input type="text" placeholder="Search mail" class="search-input w-100">
+                       <a class="nav-link" href=""><img src="assets/images/equalizer.png" alt="equalizer" width="25" height="25"></a>
+		 </li>
+		 <li class="col-1 nav-item active-btn d-flex align-items-center">
+                       <span class="me-1 green-dot"> &#9679;</span>
+                       <span class="me-1 font-weight-bold active-btn-text ">Active</span>
+                       <img class="me-1" src="assets/images/down-arrow.png" alt="Active" width="12">
+                 </li>	
+                 <li class="col-1 nav-item d-flex justify-content-between">
+			<a href="#"class="nav-link"><img src="assets/images/circle-question-regular.svg" alt="support-icon" width="24"></a>
+			<a href="#"class="nav-link"><img src="assets/images/settings.png" alt="settings-icon" width="24"></a>
+			<a href="#"class="nav-link"><img src="assets/images/apps.png" alt="apps" width="24"></a>
+                 </li>	
+                 <li class="col-2 nav-item border rounded">
+		        <a href="#"class="nav-link img-profile"><img src="assets/images/profile.png" alt="profile" width="126" height=""></a>
+                 </li>
+	   </ul>
+	  </header>
+	  <div class="main d-none d-md-flex w-100 mt-2">
+	     <div class="left-side-nav ms-2">
+		<ul class="navbar-nav flex-column">
+		   <li>
+		       <a href="#"class="nav-link">
+            		<div class="compose-container">
+               		   <div class="d-flex justify-content-start compose-container-items p-3 rounded">
+                  		<img src="assets/images/pencil-icon.png" alt="pencil-icon" width="24"/>
+                  		<span class="compose-txt ms-3 ms-3">Compose</span>
+               		   </div>
+            		</div>
+		       </a>
+		   </li>
+
+		   <li>
+		       <a href="#"class="nav-link">
+            		<div class="inbox-icon-container">
+               		   <div class="d-flex inbox-icon-container-items p-1 rounded">
+                  		<img src="assets/images/inbox-icon.png" alt="inbox-icon" width="24"/>
+                  		<span class="inbox-txt ms-3">Inbox</span>
+               		   </div>
+            		</div>
+		       </a>
+		   </li>
+		   <li>
+		       <a href="#"class="nav-link">
+            		<div class="starred-container">
+               		   <div class="d-flex starred-container-items">
+                  		<img src="assets/images/star-icon.png" alt="inbox-icon" width="24"/>
+                  		<span class="starred-txt ms-3">Starred</span>
+               		   </div>
+            		</div>
+		       </a>
+		   </li>
+		   <li>
+		       <a href="#"class="nav-link">
+            		<div class="snoozed-container">
+               		   <div class="d-flex snoozed-container-items">
+                  		<img src="assets/images/clock-icon.png" alt="clock-icon" width="24"/>
+                  		<span class="snoozed-txt ms-3">Snoozed</span>
+               		   </div>
+            		</div>
+		       </a>
+		   </li>
+		   <li>
+		       <a href="#"class="nav-link">
+            		<div class="sent-container">
+               		   <div class="d-flex sent-container-items">
+                  		<img src="assets/images/sent-icon.png" alt="inbox-icon" width="24"/>
+                  		<span class="sent-txt ms-3">Sent</span>
+               		   </div>
+            		</div>
+		       </a>
+		   </li>
+		   <li>
+		       <a href="#" class="nav-link">
+            		<div class="drafts-container">
+               		   <div class="d-flex drafts-container-items">
+                  		<img src="assets/images/draft-icon.png" alt="inbox-icon" width="24"/>
+                  		<span class="drafts-txt ms-3">Drafts</span>
+               		   </div>
+            		</div>
+		       </a>
+		   </li>
+		   <li>
+		       <a href="#" class="nav-link">
+            		<div class="more-container">
+               		   <div class="d-flex more-container-items">
+                  		<img src="assets/images/down-arrow.png" alt="inbox-icon" width="24">
+                  		<span class="more-txt ms-3">More</span>
+               		   </div>
+            		</div>
+		       </a>
+		   </li>
+		   <li>
+		       <a href="#" class="nav-link">
+            		<div class="label-container">
+               		   <div class="d-flex label-container-items justify-content-between">
+				<span class="label-txt ms-3">Label</span>
+                  		<img src="assets/images/plus-icon.png" alt="inbox-icon" width="24 "height="24"/>
+               		   </div>
+            		</div>
+		       </a>
+		   </li>
+		</ul>
+	     </div>
+	
+	     <div class="inbox-container w-100 ms-3">
+	        <header class="inbox-container-header d-flex align-items-center justify-content-between mt-2">
+		   <div class="left-flex d-flex align-center">
+                     <div class="ps-1"><img class="left-flex-icon1" src="assets/images/checkbox.png" alt="inbox-icon" width="16" height="16"></div>
+                     <div class="py-0"><img class="left-flex-icon2" src="assets/images/icons8-sort-down-24.png" alt="down-icon" width="16" height="16"></div>
+                     <div class="px-4"><img class="left-flex-icon3" src="assets/images/icons8-refresh-24.png" alt="refresh-icon" width="16" height="16"></div>
+                     <div class="px-0"><img class="left-flex-icon4" src="assets/images/ellipsis-vertical-solid.svg" alt="ellipis-icon" width="16" height="16"></div>
+               	   </div>
+		   <div class="right-flex d-flex align-center px-2">
+		     <div class="mail-num pe-3">
+                        <small class="right-flex-txt">1-49 of 49</small>
+		     </div>
+		     <div class="mail-arrows d-flex align-center">
+                       <div class="pe-4"><img class="right-flex-icon1" src="assets/images/icons8-back-24.png" alt="inbox-icon" width="16" height="16"></div>
+                       <div class="px-0"><img class="right-flex-icon2" src="assets/images/icons8-forward-24.png" alt="inbox-icon" width="16" height="16"></div>
+		     </div>
+                  </div>
+		</header>
+		<div class="inbox-container-main ms-1 mt-3 overflow-hidden">
+		   <div class="mail-container d-flex align-items-center border-bottom overflow-hidden m-2 p-2">
+                      <div class="mail-container-l d-flex">
+			  <div class="me-3"><img class="mail-container-icon1 opacity-50" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16"></div>
+                          <div class="me-3"><img class="mail-container-icon2 opacity-50" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16"></div>
+                      </div>
+                      <div class="mail-container-center d-flex text-truncate">
+                         <div class="mail-container-content-l">
+                            <span class="mail-sender text-nowrap">Techversant Infotec</span>
+                         </div>
+                       <div class="mail-container-content-center ms-5 text-truncate overflow-hidden me-5">
+                         <span class="mail-subject text-nowrap">Daily Email Digest</span>
+                         <span class="mail-subject-hypen">-</span>
+                         <span class="mail-subject-content text-truncate">Daily Digest Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)</span>
+                       </div>
+                      </div>
+                     <div class="mail-container-r d-flex ms-auto me-2">
+                        <span class="mail-content-time text-nowrap">9:28 AM</span>
+			<img class="mail-content-star d-lg-none d-block" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16">
+                     </div>
+                   </div>
+		   <div class="mail-container d-flex align-items-center border-bottom overflow-hidden m-2 p-2">
+                      <div class="mail-container-l d-flex">
+			  <div class="me-3"><img class="mail-container-icon1 opacity-50" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16"></div>
+                          <div class="me-3"><img class="mail-container-icon2 opacity-50" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16"></div>
+                      </div>
+                      <div class="mail-container-center d-flex text-truncate">
+                         <div class="mail-container-content-l">
+                            <span class="mail-sender text-nowrap">Techversant Infotec</span>
+                         </div>
+                       <div class="mail-container-content-center ms-5 text-truncate overflow-hidden me-5">
+                         <span class="mail-subject text-nowrap">Daily Email Digest</span>
+                         <span class="mail-subject-hypen">-</span>
+                         <span class="mail-subject-content text-truncate">Daily Digest Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)</span>
+                       </div>
+                      </div>
+                     <div class="mail-container-r d-flex ms-auto me-2">
+                        <span class="mail-content-time text-nowrap">9:28 AM</span>
+			<img class="mail-content-star d-lg-none d-block" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16">
+                     </div>
+                   </div>
+		   <div class="mail-container d-flex align-items-center border-bottom overflow-hidden m-2 p-2">
+                      <div class="mail-container-l d-flex">
+			  <div class="me-3"><img class="mail-container-icon1 opacity-50" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16"></div>
+                          <div class="me-3"><img class="mail-container-icon2 opacity-50" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16"></div>
+                      </div>
+                      <div class="mail-container-center d-flex text-truncate">
+                         <div class="mail-container-content-l">
+                            <span class="mail-sender text-nowrap">Techversant Infotec</span>
+                         </div>
+                       <div class="mail-container-content-center ms-5 text-truncate overflow-hidden me-5">
+                         <span class="mail-subject text-nowrap">Daily Email Digest</span>
+                         <span class="mail-subject-hypen">-</span>
+                         <span class="mail-subject-content text-truncate">Daily Digest Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)</span>
+                       </div>
+                      </div>
+                     <div class="mail-container-r d-flex ms-auto me-2">
+                        <span class="mail-content-time text-nowrap">9:28 AM</span>
+			<img class="mail-content-star d-lg-none d-block" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16">
+                     </div>
+                   </div>
+		   <div class="mail-container d-flex align-items-center border-bottom overflow-hidden m-2 p-2">
+                      <div class="mail-container-l d-flex">
+			  <div class="me-3"><img class="mail-container-icon1 opacity-50" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16"></div>
+                          <div class="me-3"><img class="mail-container-icon2 opacity-50" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16"></div>
+                      </div>
+                      <div class="mail-container-center d-flex text-truncate">
+                         <div class="mail-container-content-l">
+                            <span class="mail-sender text-nowrap">Techversant Infotec</span>
+                         </div>
+                       <div class="mail-container-content-center ms-5 text-truncate overflow-hidden me-5">
+                         <span class="mail-subject text-nowrap">Daily Email Digest</span>
+                         <span class="mail-subject-hypen">-</span>
+                         <span class="mail-subject-content text-truncate">Daily Digest Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)</span>
+                       </div>
+                      </div>
+                     <div class="mail-container-r d-flex ms-auto me-2">
+                        <span class="mail-content-time text-nowrap">9:28 AM</span>
+			<img class="mail-content-star d-lg-none d-block" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16">
+                     </div>
+                   </div>
+		   <div class="mail-container d-flex align-items-center border-bottom overflow-hidden m-2 p-2">
+                      <div class="mail-container-l d-flex">
+			  <div class="me-3"><img class="mail-container-icon1 opacity-50" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16"></div>
+                          <div class="me-3"><img class="mail-container-icon2 opacity-50" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16"></div>
+                      </div>
+                      <div class="mail-container-center d-flex text-truncate">
+                         <div class="mail-container-content-l">
+                            <span class="mail-sender text-nowrap">Techversant Infotec</span>
+                         </div>
+                       <div class="mail-container-content-center ms-5 text-truncate overflow-hidden me-5">
+                         <span class="mail-subject text-nowrap">Daily Email Digest</span>
+                         <span class="mail-subject-hypen">-</span>
+                         <span class="mail-subject-content text-truncate">Daily Digest Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)Thursday,19Sep Hello, Name On leave today(5) View all Name,Name  Name On leave today(5)</span>
+                       </div>
+                      </div>
+                     <div class="mail-container-r d-flex ms-auto me-2">
+                        <span class="mail-content-time text-nowrap">9:28 AM</span>
+			<img class="mail-content-star d-lg-none d-block" src="assets/images/star-icon-light.png" alt="star-icon-light" width="16" height="16">
+                     </div>
+                   </div>
+
+
+		</div>
+		
+	     </div>
+	     
+	  </div>
+	</div>
+      </div>
+	</div>
+	<div class="m-view d-block d-md-none">
+		<div class="m-top d-flex justify-content-between align-items-center m-1 p-1 border-bottom">
+		  <div class="m-top-left col-6 d-flex align-items-center">
+			<div class="m-top-logo pe-2"><img src="assets/images/m-view-logo.png" alt="logo" width="58" height="49"></div>
+			<div class="m-top-txt">
+				<span class="m-top-txt-1 text-nowrap">Upgrade to a smarter Gmail<br></span>
+			  	<span class="m-top-txt-2">Secure,fast & organized email</span>
+			</div>
+		  </div>
+		  <div class="m-top-txt-right col-6 d-flex justify-content-end text-primary p-3">OPEN</div>
+		</div>
+		<div class="m-header d-flex justify-content-between align-items-center m-1 p-1 border-bottom">
+		  <div class="m-header-l d-flex">
+			<div class="ms-1"><img class="m-header-l-icon1" src="assets/images/icons8-menu-24.png" alt="menu-icon" width="18"></div>
+			<div class="ms-3"><img class="m-header-l-icon2" src="assets/images/icons8-refresh-24.png" alt="refresh-icon" width="18"></div>
+		  </div>
+		  <div class="m-header-center">Inbox</div>
+		  <div class="m-header-r">
+			<div class="m-header-r-container">
+			  <img class="m-header-r-icon3" src="assets/images/icons8-pencil-24.png" alt="pencil-icon" width="24">
+			</div>
+		  </div>
+		</div>
+		<div class="m-search m-header d-flex m-1 p-1 border-bottom">
+		  <div class="m-search-icon d-flex align-items-center">
+			<img src="assets/images/search.png" alt="search-icon" width="24">
+		  </div>
+		  <div class="m-search-input w-100">
+			<input type="search" name="user-search" placeholder="Search" class="w-100 p-2 input-box">
+		  </div>
+		</div>
+		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>		<div class="m-mail-container d-flex m-1 p-3 border-bottom">
+		  <div class="m-mail-container-l d-flex align-items-center me-2">
+			<img class="mail-container-icon1" src="assets/images/checkbox.png" alt="square-icon-light" width="16" height="16">
+		  </div>
+		  <div class="m-mail-container-center d-flex flex-column m-1 p-1 border-bottom">
+			<span class="m-mail-container-center-heading fw-normal">Techversant Infotech Pvt.</span>
+			<span class="m-mail-container-center-txt-1 fw-lighter">Daily Email Digest</span>
+			<span class="m-mail-container-center-txt-2 fw-lighter">Daily Digest Thursday,19 Sep Hello, Name On leave today(5) View all</span>
+		  </div>
+		  <div class="m-mail-container-r d-flex flex-column ms-auto">
+			<span class="m-mail-container-time text-nowrap">9:28 AM</span>
+			<span><img class="m-mail-container-r-icon" src="assets/images/star-icon.png" alt="inbox-icon" width="24"/></span>
+		  </div>
+		</div>
+	</div>
+      
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+   </body>
+</html>

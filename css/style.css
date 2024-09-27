@@ -1,0 +1,73 @@
+*{
+	margin: 0px;
+    	padding: 0px;
+    	box-sizing: border-box;
+}
+
+
+body {
+	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+	background-color: #f6f8fc;
+}
+
+.search-input{
+	border:none;	
+}
+.green-dot {
+	color: #1E8E3E;
+	font-size: 20px;
+}
+.inbox-icon-container, .starred-container, .sent-container, .snoozed-container, .drafts-container, .label-container, .more-container{
+	width:230px;
+}
+.compose-container{
+	width:140px;
+}
+
+.compose-container-items{
+	background-color:#C2E7FF;
+}
+
+.inbox-icon-container-items,.envelope{
+	background-color:#D3E3FD;
+}
+.inbox-container-header{
+	width:90%;
+}
+.inbox-container-main{
+	width:90%;
+	font-size:14px;
+}
+.mail-container-content-center{
+	width:85%;
+}
+.mail-container{
+	width:84%;
+
+}
+.m-top{
+	width:100%;
+}
+.m-top-txt-right{
+	width: 100%;
+}
+.m-view{
+	width:95%;
+}
+.m-top-txt-2{
+	font-size:13px;
+	font-weight:400;
+}
+.m-top-txt-1{
+	font-weight:500;
+	font-size:14px;
+}
+.m-search-input{
+	flex-grow:1;
+}
+.input-box{
+	border:none;
+}
+.m-mail-container-center-txt-2,.m-mail-container-center-txt-1{
+	font-size:14px;
+}
